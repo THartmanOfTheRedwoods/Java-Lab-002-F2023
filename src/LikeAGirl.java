@@ -8,20 +8,20 @@ public class LikeAGirl {
     public static void main(String[] args) {
         // String variables, some with format specifiers
         String scriptTemplateLine1 = "What does it mean to do something, \"%s\"?";
-        String scriptTemplateLine2 = "Show me what it looks like to run, \"%s.\"%n";
+        String scriptTemplateLine2 = "Show me what it looks like to run,  \"%s.\"%n";
         String scriptTemplateLine3 = "Show me what it looks like to fight, \"%s.\"";
         String scriptTemplateLine4 =
                 "How do you think it affects them when somebody uses \"%s\" as an insult? Choice (good: %d, bad: %d) ";
         String scriptTemplateLine5 = "You answered %d%n%s.";
         String ansGood = "Always wants to change that.%nEmotional Damage %f";
         String ansBad = "Good for you.%nEmotional Damage %f";
-        String likeAGirl = "Like a Girl";
+        String likeAGirl = "Like a boy";
 
         // integer variable
-        int good = 0;
         int bad = 1;
+        int good = 2;
         // 32 bit floating point variable
-        float emotionalDamage = 0.0f;  // 32 Bit, but it does exist!
+        float emotionalDamage = 50.0f;  // 32 Bit, but it does exist!
         // double precision floating point variable
         double dEmotionalDamage = 100.0; // Double precision
         // boolean variable

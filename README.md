@@ -57,9 +57,20 @@ Did you answer like a nice person? FALSE
 Take note of the various variables and their data types. Write a brief summary in this section of the README.md file listing the:
 * Variable name
 * Its data type
-* and example values you can assign them.
+* and example values you can assign them.                                 /
 
-Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
+int, float, double, and boolean.
+int data type is a primitive type that is used to declare variables. The float 
+data type is used to save memory and is never used for precise values.
+The double data type is used to declare variables and can be used with methods to 
+return to double-precision.The boolean data type is used to store two possible 
+values, either true or false.
+
+Next give TWO example variable names and TWO example variable assignments that are
+**WRONG** and explain why?
+Leaving a semicolon off is important because you need to have a semicolon because
+they allow the java program to be written in one line or multiple, by letting the
+compiler know where to end instructions.
 * Hint: your IDE can help you discover wrong assignments or variable names!
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
