@@ -59,8 +59,26 @@ Take note of the various variables and their data types. Write a brief summary i
 * Its data type
 * and example values you can assign them.
 
+ANSWERS:
+
+Int (bad/good, answer), 1-a lot
+Float, emotionaldamage lots of numbers
+double, demotionaldamage
+boolean, trueOrfalse
+
+
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
+
+
+ANSWERS:
+
+assigning a variable a slightly different name than other instances of the same variable, say I replace the g in good with a capital G, but leave the rest lowercase.
+int 2.5, saying integer then making the number a fraction.
+
+Starting a variable name with a number, the software gets angry when you do this.
+Variable names cant have spaces, it will mess with the code.
+
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 

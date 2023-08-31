@@ -15,13 +15,13 @@ public class LikeAGirl {
         String scriptTemplateLine5 = "You answered %d%n%s.";
         String ansGood = "Always wants to change that.%nEmotional Damage %f";
         String ansBad = "Good for you.%nEmotional Damage %f";
-        String likeAGirl = "Like a Girl";
+        String likeAGirl = "Like a boy";
 
         // integer variable
-        int good = 0;
         int bad = 1;
+        int good = 2;
         // 32 bit floating point variable
-        float emotionalDamage = 0.0f;  // 32 Bit, but it does exist!
+        float emotionalDamage = 50.0f;  // 32 Bit, but it does exist!
         // double precision floating point variable
         double dEmotionalDamage = 100.0; // Double precision
         // boolean variable
@@ -53,3 +53,4 @@ public class LikeAGirl {
         System.out.printf("Did you answer like a nice person? %B%n", trueOrFalse);
     }
 }
+
