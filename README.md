@@ -59,8 +59,15 @@ Take note of the various variables and their data types. Write a brief summary i
 * Its data type
 * and example values you can assign them.
 
+Java variables are String, int, double, float, and char. 
+When is comes to the date types for these variables they use primitive date types in the bites for size
+A example of a value you could assign to these variable are 9 for int,
+A number that has decimal points for float and double but doubles can be twice as large as floats. 
+
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
+* A String that is 1a and it is because the 1 is before the a
+* A double with a assignment of value because its not a decimaled number
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
