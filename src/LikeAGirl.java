@@ -7,21 +7,24 @@ public class LikeAGirl {
      **/
     public static void main(String[] args) {
         // String variables, some with format specifiers
-        String scriptTemplateLine1 = "What does it mean to do something, \"%s\"?";
+        String scriptTemplateLine1 = "What does it mean to do something, \"%s\"%s?";
         String scriptTemplateLine2 = "Show me what it looks like to run, \"%s.\"%n";
         String scriptTemplateLine3 = "Show me what it looks like to fight, \"%s.\"";
         String scriptTemplateLine4 =
                 "How do you think it affects them when somebody uses \"%s\" as an insult? Choice (good: %d, bad: %d) ";
         String scriptTemplateLine5 = "You answered %d%n%s.";
-        String ansGood = "Always wants to change that.%nEmotional Damage %f";
-        String ansBad = "Good for you.%nEmotional Damage %f";
-        String likeAGirl = "Like a Girl";
+        String ansGood = "Good for you.%nEmotional Damage %f%c";
+        String ansBad = "Always wants to change that.%nEmotional Damage %f";
+        String likeABoy = "Like a boy";
+        String question = "?"; //experimenting with format specifiers
+        char heart = '\u2665'; //experimenting with format specifiers
+
 
         // integer variable
-        int good = 0;
-        int bad = 1;
+        int good = 1;
+        int bad = 2;
         // 32 bit floating point variable
-        float emotionalDamage = 0.0f;  // 32 Bit, but it does exist!
+        float emotionalDamage = 50.0f;  // 32 Bit, but it does exist!
         // double precision floating point variable
         double dEmotionalDamage = 100.0; // Double precision
         // boolean variable
@@ -30,26 +33,26 @@ public class LikeAGirl {
         Scanner s = new Scanner(System.in);
 
         System.out.println(
-                String.format(scriptTemplateLine1, likeAGirl));
+                String.format(scriptTemplateLine1, likeABoy, question));
 
         // Example of using printf and platform specific line separator "%n" to
         // format instead of String.format
-        System.out.printf(scriptTemplateLine2, likeAGirl);
+        System.out.printf(scriptTemplateLine2, likeABoy);
 
-        System.out.println(String.format(scriptTemplateLine3, likeAGirl));
+        System.out.println(String.format(scriptTemplateLine3, likeABoy));
 
-        System.out.printf(scriptTemplateLine4, likeAGirl, good, bad);
+        System.out.printf(scriptTemplateLine4, likeABoy, good, bad);
 
         int answer = Integer.parseInt(s.nextLine());
 
         System.out.println(
                 String.format(scriptTemplateLine5, answer,
                         (answer == good) ?
-                                String.format(ansGood, dEmotionalDamage) : String.format(ansBad, emotionalDamage)
+                                String.format(ansGood, emotionalDamage, heart) : String.format(ansBad, dEmotionalDamage)
                 )
         );
 
-        trueOrFalse = (answer != good);  // if answer == 1 (i.e. good), then trueOrFalse should be False
+        trueOrFalse = (answer != bad);  // if answer == 1 (i.e. good), then trueOrFalse should be False
         System.out.printf("Did you answer like a nice person? %B%n", trueOrFalse);
     }
 }
