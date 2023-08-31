@@ -15,37 +15,38 @@ public class LikeAGirl {
         String scriptTemplateLine5 = "You answered %d%n%s.";
         String ansGood = "Always wants to change that.%nEmotional Damage %f";
         String ansBad = "Good for you.%nEmotional Damage %f";
-        String likeAGirl = "Like a Girl";
+        String likeABoy = "Like a Boy";
 
         // integer variable
         int good = 0;
         int bad = 1;
         // 32 bit floating point variable
-        float emotionalDamage = 0.0f;  // 32 Bit, but it does exist!
+        float emotionalDamage = 50.0f;  // 32 Bit, but it does exist!
         // double precision floating point variable
-        double dEmotionalDamage = 100.0; // Double precision
+        double dEmotionalDamage = 100.0;
+
         // boolean variable
         boolean trueOrFalse;
         // Scanner variable for reading input.
         Scanner s = new Scanner(System.in);
 
         System.out.println(
-                String.format(scriptTemplateLine1, likeAGirl));
+                String.format(scriptTemplateLine1, likeABoy));
 
         // Example of using printf and platform specific line separator "%n" to
         // format instead of String.format
-        System.out.printf(scriptTemplateLine2, likeAGirl);
+        System.out.printf(scriptTemplateLine2, likeABoy);
 
-        System.out.println(String.format(scriptTemplateLine3, likeAGirl));
+        System.out.println(String.format(scriptTemplateLine3, likeABoy));
 
-        System.out.printf(scriptTemplateLine4, likeAGirl, good, bad);
+        System.out.printf(scriptTemplateLine4, likeABoy, good, bad);
 
         int answer = Integer.parseInt(s.nextLine());
 
         System.out.println(
                 String.format(scriptTemplateLine5, answer,
                         (answer == good) ?
-                                String.format(ansGood, dEmotionalDamage) : String.format(ansBad, emotionalDamage)
+                                String.format(ansGood, emotionalDamage) : String.format(ansBad, dEmotionalDamage)
                 )
         );
 

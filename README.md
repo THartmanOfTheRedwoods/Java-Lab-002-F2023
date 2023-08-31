@@ -59,8 +59,40 @@ Take note of the various variables and their data types. Write a brief summary i
 * Its data type
 * and example values you can assign them.
 
+- Variable Name - scriptTemplateLine1
+- Data Type - String 
+- "Hello World"
+
+- Variable Name - bad
+- Data Type - Integer = int
+- any whole number 
+
+- Variable Name - dEmotionalDamage
+- Data Type - double 
+- number with a decimal point 64 bit 
+
+- Variable Name - emotionalDamage
+- Data Type - float
+- number with a decimal point 32 bit 
+
+- Variable Name - trueOrFalse
+- Data Type - boolean
+- True or False 
+
+
+
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
+
+* Example of Wrong variable names 
+ String = 123; is incorrect becuase 123 is an int 
+ int = "Hello World"; is inccorect becuase "Hello World" is a String 
+
+* Example of wrong variable assignments
+
+- double a = 2;
+- int b = 2.3;
+
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
