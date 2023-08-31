@@ -59,8 +59,16 @@ Take note of the various variables and their data types. Write a brief summary i
 * Its data type
 * and example values you can assign them.
 
+### Student - Answer - Summary
+1. emotional damage, a float, 32 bit number. I can change it from 0 to 50 and change the emotional damage I receive.
+2. ansBad, String, It tells me "Good for you." Then states %nEmotional Damage %f of ansBad.
+
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
+### Student - Answer - Summary
+1. int Main and int System are keywords that can't be used for Variables
+2. A. int good = 2.20 doesn't work. an integer does not hold rational numbers.
+B. double emotionalDamage = 50000...(more than 64). double is limited to 64 bits. For numbers bigger than 64 integers you would was to use BigInteger
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
