@@ -59,14 +59,32 @@ Take note of the various variables and their data types. Write a brief summary i
 * Its data type
 * and example values you can assign them.
 
+Some example variables could be the stringTemplateLine(s) since they are variables assigned to the String class/data type, as well as ansGood,
+ansBad, and likeaBoy. Others could be good, bad, or emotionalDamage which are assigned to the int, float, boolean and double class types, and the 
+Scanner class type is included too.
+Example values that could be assigned to these variables and class types could be changing up the answer section from 0 and 1 or 1 and 2 to random 
+numbers that the person answering would then type in. Or increasing or decreasing the emotionalDamage or dEmotionalDamage. Could also 
+change the String values to println whatever script preferred for the different stringTemplates.
+
+
+The data types 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
+
+Two example variable names that are wrong would be attempting to assign a variable name that is a class/data type like "public", or "static". These 
+would be wrong because these names are used in Java to be class/data types rather than variable names and would create a syntax error. 
+Two example variable assignments that are wrong would be attempting to assign a floating point number to the int data type, as well as trying to assign 
+a String variable to the int data type without trying to parseInt first to covert a String class type to an int class type. 
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
 Pick several of the Java format specifiers below and define variables of the correct type utilize **sout** and **String.format** to view the resulting formats.
 
 ![Format Specifiers](JavaStringFormatSpecifiers.png)
+
+%n is a format specifier that has no data type but acts as a line separator much like \n.
+After assigning a String value using _String (variable name) = "Example string."_, can use %s to reference back to that string.
+%B or %b directly references the boolean class type and the trueOrFalse variables.
 
 ### Part 4 - Submission
 * Just as you did last week (Reference the Lab video in your Week 1 module), create a Feature1 branch of your code
