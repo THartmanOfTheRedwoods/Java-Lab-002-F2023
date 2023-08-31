@@ -18,8 +18,8 @@ public class LikeAGirl {
         String likeAGirl = "Like a Girl";
 
         // integer variable
-        int good = 0;
-        int bad = 1;
+        int good = 1;
+        int bad = 2;
         // 32 bit floating point variable
         float emotionalDamage = 0.0f;  // 32 Bit, but it does exist!
         // double precision floating point variable
