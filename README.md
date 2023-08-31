@@ -58,15 +58,22 @@ Take note of the various variables and their data types. Write a brief summary i
 * Variable name
 * Its data type
 * and example values you can assign them.
-
+* "scriptTemplateLine1" - string - "abc"
+* "good" - int - "123"
+* "emotionalDamage" - float - "decimals and negatives, 32 bit size"
+* "dEmotionalDamage" - double - "decimals and negatives like float, but 64 bit size"
+* "trueOrFalse" - boolean - "1 or 0, true or false"
+* "s" - scanner - "System.in"
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
-
+int Main = "Hello" (You can't name a variable the same as the class name and you can't assign a string to an int)
+string float = "12" + "3" (Can't use keywords for variable names and this math won't work like you want, this will concatonate and give you "123" not add those two numbers) 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
 Pick several of the Java format specifiers below and define variables of the correct type utilize **sout** and **String.format** to view the resulting formats.
 
 ![Format Specifiers](JavaStringFormatSpecifiers.png)
+
 
 ### Part 4 - Submission
 * Just as you did last week (Reference the Lab video in your Week 1 module), create a Feature1 branch of your code
