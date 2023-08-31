@@ -15,7 +15,7 @@ public class LikeAGirl {
         String scriptTemplateLine5 = "You answered %d%n%s.";
         String ansGood = "Always wants to change that.%nEmotional Damage %f";
         String ansBad = "Good for you.%nEmotional Damage %f";
-        String likeAGirl = "Like a Girl";
+        String likeAGirl = "Like a Boy";
 
         // integer variable
         int good = 0;
@@ -51,5 +51,6 @@ public class LikeAGirl {
 
         trueOrFalse = (answer != good);  // if answer == 1 (i.e. good), then trueOrFalse should be False
         System.out.printf("Did you answer like a nice person? %B%n", trueOrFalse);
+
     }
 }
