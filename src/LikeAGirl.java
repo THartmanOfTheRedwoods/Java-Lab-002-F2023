@@ -21,7 +21,7 @@ public class LikeAGirl {
         int good = 0;
         int bad = 1;
         // 32 bit floating point variable
-        float emotionalDamage = 0.0f;  // 32 Bit, but it does exist!
+        float emotionalDamage = 50.0f;  // 32 Bit, but it does exist!
         // double precision floating point variable
         double dEmotionalDamage = 100.0; // Double precision
         // boolean variable
