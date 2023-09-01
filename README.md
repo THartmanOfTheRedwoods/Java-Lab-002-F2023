@@ -52,15 +52,24 @@ Always wants to change that.
 Emotional Damage 100.000000.
 Did you answer like a nice person? FALSE
 ```
-
-### Part 2 - Interpretation
+Part 2 - Interpretation
 Take note of the various variables and their data types. Write a brief summary in this section of the README.md file listing the:
 * Variable name
 * Its data type
-* and example values you can assign them.
+* and example values you can assign them.<br><br>
+//<br>
+ansBad - String - any sequence of characters  <br>
+bad - int - any integer (whole number)
+<br>//<br>
 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
-* Hint: your IDE can help you discover wrong assignments or variable names!
+* Hint: your IDE can help you discover wrong assignments or variable names!<br><br>
+  //<br>
+  int number = 8;<br>
+  (wrong: 8 = number)<br><br>
+  String example = ("random text");<br>
+  (wrong: example String =("random text"));
+  <br>//<br>
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
