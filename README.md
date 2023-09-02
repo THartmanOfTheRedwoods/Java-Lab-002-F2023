@@ -55,12 +55,21 @@ Did you answer like a nice person? FALSE
 
 ### Part 2 - Interpretation
 Take note of the various variables and their data types. Write a brief summary in this section of the README.md file listing the:
-* Variable name
-* Its data type
-* and example values you can assign them.
+* Variable name: != or the not equal symbol from line 50 in the original code.
+* Its data type: It is a comparison operator.
+* and example values you can assign them.: x!=y is an example.
 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
+
+* Variable name: The %n from line 31. System.out.printf((scriptTemplateLine1) + "%n", likeAGirl);
+* Its data type: It has none.
+* and example values you can assign them: It is used as a platform-specific line separator. It acts as a placeholder for a new line symbol in formatted string. 
+
+
+* Variable name:Equal to == was wrong on line 59 for the answer==good.
+* Its data type:It is a comparison operator.
+* and example values you can assign them: An example would be x==y.
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
