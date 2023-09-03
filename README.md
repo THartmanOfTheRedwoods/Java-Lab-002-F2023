@@ -58,9 +58,19 @@ Take note of the various variables and their data types. Write a brief summary i
 * Variable name
 * Its data type
 * and example values you can assign them.
+### Answer for Part 2 
+* String is a declaration. ex: String message;
+* int is an integer. ex int x = 123
+* float is a floating point. ex float exampleOne = 100.0f
+* double is a double precision data type. ex double a = 100
+* boolean is a primitive data type. ex boolean trueOrFalse;
+
+
 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
+* int A = yes; this is wrong because the assignment for int is using letters instead of numbers.
+* boolean = TrueOrFalse; this is wrong because the first letter of the assignment must not be capitalized. 
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
