@@ -62,6 +62,11 @@ Take note of the various variables and their data types. Write a brief summary i
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
 
+one example of a variable would be a variable made for someones age. The data type would be int, with the name being age, andd the values you could assign could be anything from 0-110.
+
+two examples: 
+a variable called public would not work because its a keyword. Samething with class or void. another example would be a string or any variable with its first letter being a capital
+wrong assignments would be - int age = 5.5; this is wrong because you would need to use double for something with a decimal. or int time = 12:45; it would be better to use a string for time
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
 Pick several of the Java format specifiers below and define variables of the correct type utilize **sout** and **String.format** to view the resulting formats.
