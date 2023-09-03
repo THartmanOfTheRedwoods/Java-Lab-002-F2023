@@ -55,12 +55,19 @@ Did you answer like a nice person? FALSE
 
 ### Part 2 - Interpretation
 Take note of the various variables and their data types. Write a brief summary in this section of the README.md file listing the:
-* Variable name
-* Its data type
-* and example values you can assign them.
+* Variable Name: dEmotionalDamage
+* Data Type: double
+* Example Values: 100.0 , 50.0
 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
-* Hint: your IDE can help you discover wrong assignments or variable names!
+
+Names
+* int **1test** = 123 - names can't start with numbers
+* double **test!** = 123.0 - no special characters
+
+Assignments
+* char test = **123** - char can only represent characters, not numbers
+* int test2 = **123.0** - floating point variables should be typed as float or double, not int
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
