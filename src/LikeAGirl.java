@@ -4,52 +4,88 @@ public class LikeAGirl {
     /**
      * "Like a Girl," Super Bowl XLIX (2015) - <a href="https://www.youtube.com/watch?v=5yLXrWLvwAo">Like a Girl</a>
      * @param args Command line arguments [The source file path, The target file path, ...]
+     * @author Trevor Hartman
+     * @author Atticus Blanco
+     *
+     * @since Version 1.0
      **/
     public static void main(String[] args) {
-        // String variables, some with format specifiers
-        String scriptTemplateLine1 = "What does it mean to do something, \"%s\"?";
-        String scriptTemplateLine2 = "Show me what it looks like to run, \"%s.\"%n";
-        String scriptTemplateLine3 = "Show me what it looks like to fight, \"%s.\"";
-        String scriptTemplateLine4 =
-                "How do you think it affects them when somebody uses \"%s\" as an insult? Choice (good: %d, bad: %d) ";
-        String scriptTemplateLine5 = "You answered %d%n%s.";
-        String ansGood = "Always wants to change that.%nEmotional Damage %f";
-        String ansBad = "Good for you.%nEmotional Damage %f";
-        String likeAGirl = "Like a Girl";
 
-        // integer variable
-        int good = 0;
-        int bad = 1;
-        // 32 bit floating point variable
-        float emotionalDamage = 0.0f;  // 32 Bit, but it does exist!
-        // double precision floating point variable
-        double dEmotionalDamage = 100.0; // Double precision
-        // boolean variable
+        String script1_gender = "What does it mean to do something, \"Like a %s\"?%n";
+        String script2_verb_gender = "Show me what it looks like to %s, \"Like a %s.\"%n";
+        String script3_gender =
+                "How do you think it affects them when somebody uses \"Like a %s\" as an insult?";
+        String script4_string = "You answered %s%n";
+        String script5_1 = "Always wants to change that.%n";
+        String script5_2 = "Good for you.%n";
+        String script6_float = "Emotional Damage %f%n";
+        String script7_bool = "Did you answer like a nice person? %b";
+        String scriptChoice = "Choice (good: %s, bad: %s) ";
+        String scriptDivider = "********************";
+        String scriptInvalid = "INVALID INPUT";
+        String verbRun = "run";
+        String verbFight = "fight";
+        String genderBoy = "Boy";
+        String good = "1";
+        String bad = "2";
+        String typeChar = "Alphabetic Characters%n";
+        String typeSpecial = "Special Characters%n";
+        String typeWhite = "Whitespace Characters%n";
+        String userString;
+
+        float emotionalDamage = 50.0f;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.printf(script1_gender, genderBoy);
+        System.out.printf(script2_verb_gender, verbRun, genderBoy);
+        System.out.printf(script2_verb_gender, verbFight, genderBoy);
+        System.out.printf(script3_gender, genderBoy);
+
+        boolean checksumOkay;
+        boolean containsChar = false;
+        boolean containsWhite = false;
+        boolean containsSpecial = false;
         boolean trueOrFalse;
-        // Scanner variable for reading input.
-        Scanner s = new Scanner(System.in);
+        char checksumChar;
 
-        System.out.println(
-                String.format(scriptTemplateLine1, likeAGirl));
+        do {
+            System.out.printf(scriptChoice, good, bad);
+            userString = scanner.nextLine();
 
-        // Example of using printf and platform specific line separator "%n" to
-        // format instead of String.format
-        System.out.printf(scriptTemplateLine2, likeAGirl);
+            for (int i = 0; i <= userString.length()-1; ++i) {
+                checksumChar = userString.charAt(i);
+                if (Character.isLetter(checksumChar) && !containsChar) {
+                    containsChar = true;
+                }
+                if (Character.isWhitespace(checksumChar) && !containsWhite) {
+                    containsWhite = true;
+                }
+                if (!Character.isLetterOrDigit(checksumChar) && !containsSpecial) {
+                    containsSpecial = true;
+                }
+            }
 
-        System.out.println(String.format(scriptTemplateLine3, likeAGirl));
+            checksumOkay = (userString.equals(good) || userString.equals(bad));
+            trueOrFalse = userString.equals(bad);
 
-        System.out.printf(scriptTemplateLine4, likeAGirl, good, bad);
+            //System.out.printf( !checksumOkay ? System.out.format(scriptInvalid, scriptChoice) : "");      //Canvas Discussion thread
 
-        int answer = Integer.parseInt(s.nextLine());
+            if (!checksumOkay) {
+                System.out.println(scriptDivider + "\n" + scriptInvalid + "\n" + scriptDivider);
+                System.out.printf(containsChar ? typeChar : "");
+                containsChar = false;
+                System.out.printf(!containsWhite && containsSpecial ? typeSpecial : "");
+                containsSpecial = false;
+                System.out.printf( (containsWhite && !containsSpecial) ? typeWhite : "");
+                containsWhite = false;
+                System.out.println(scriptDivider);
+                }
 
-        System.out.println(
-                String.format(scriptTemplateLine5, answer,
-                        (answer == good) ?
-                                String.format(ansGood, dEmotionalDamage) : String.format(ansBad, emotionalDamage)
-                )
-        );
+        } while (!checksumOkay);
 
-        trueOrFalse = (answer != good);  // if answer == 1 (i.e. good), then trueOrFalse should be False
-        System.out.printf("Did you answer like a nice person? %B%n", trueOrFalse);
+        System.out.printf(script4_string, userString);
+        System.out.printf( (userString.equals(good)) ? script5_2 : script5_1 );
+        System.out.printf(script6_float, emotionalDamage * Integer.parseInt(userString));       //pg 147
+        System.out.printf(script7_bool, trueOrFalse);
     }
 }
