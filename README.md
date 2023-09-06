@@ -59,8 +59,31 @@ Take note of the various variables and their data types. Write a brief summary i
 * Its data type
 * and example values you can assign them.
 
+Variable Name: good, emotionalDamage, trueOrFalse
+
+Its data type: 
+
+good: integer data type
+
+emotionalDamage: float data type
+
+trueOrFalse: boolean data type
+
+Example values you can assign them: 
+
+good: I assigned 1 since it is an integer data type 
+
+emotionalDamage: I assigned 100.0f since it is a float data type
+
+trueOrFalse: true or false 
+
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
+
+int hour: 7.5;  this is wrong because integers can only be whole numbers. 
+
+double y = 2/8; a common mistake, the assignments are integers instead they should be
+2.0 and 8.0, assign floating-point values to floating-point variables always. 
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
