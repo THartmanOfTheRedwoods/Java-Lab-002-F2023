@@ -74,3 +74,12 @@ Pick several of the Java format specifiers below and define variables of the cor
 * Push it to your Remote/origin branch (i.e. GitHub: Feature1 -> origin/Feature1)
 * Then issue a Pull request to my instructor branch
     * Make sure to **COPY** the Pull request URL and submit it for the lab/assignment.
+
+# Summary
+  The variable name would be the String scriptTemplateLines and the values can be, "What does it mean to do something, "Like a Girl"?".
+or any other stings it states. The data type would be strings which is a sequence of characters.
+I think the "You answered 1" has the true or false variable. It gives the data type boolean and creates the value
+"Good for you." or "Always wants to change that." depending on the input. I'm sort of getting it.
+Hey
+
+
