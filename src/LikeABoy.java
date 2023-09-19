@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class LikeAGirl {
+public class LikeABoy {
     /**
-     * "Like a Girl," Super Bowl XLIX (2015) - <a href="https://www.youtube.com/watch?v=5yLXrWLvwAo">Like a Girl</a>
+     * "Like a Girl," Super Bowl XLSX (2015) - <a href="https://www.youtube.com/watch?v=5yLXrWLvwAo">Like a Girl</a>
      * @param args Command line arguments [The source file path, The target file path, ...]
      **/
     public static void main(String[] args) {
@@ -12,10 +12,10 @@ public class LikeAGirl {
         String scriptTemplateLine3 = "Show me what it looks like to fight, \"%s.\"";
         String scriptTemplateLine4 =
                 "How do you think it affects them when somebody uses \"%s\" as an insult? Choice (good: %d, bad: %d) ";
-        String scriptTemplateLine5 = "You answered %d%n%s.";
+        String scriptTemplateLine5 = "You answered 1.";
         String ansGood = "Always wants to change that.%nEmotional Damage %f";
         String ansBad = "Good for you.%nEmotional Damage %f";
-        String likeAGirl = "Like a Girl";
+        String likeABoy = "Like a Boy";
 
         // integer variable
         int good = 0;
@@ -30,15 +30,15 @@ public class LikeAGirl {
         Scanner s = new Scanner(System.in);
 
         System.out.println(
-                String.format(scriptTemplateLine1, likeAGirl));
+                String.format(scriptTemplateLine1, likeABoy));
 
         // Example of using printf and platform specific line separator "%n" to
         // format instead of String.format
-        System.out.printf(scriptTemplateLine2, likeAGirl);
+        System.out.printf(scriptTemplateLine2, likeABoy);
 
-        System.out.println(String.format(scriptTemplateLine3, likeAGirl));
+        System.out.println(String.format(scriptTemplateLine3, likeABoy));
 
-        System.out.printf(scriptTemplateLine4, likeAGirl, good, bad);
+        System.out.printf(scriptTemplateLine4, likeABoy, good, bad);
 
         int answer = Integer.parseInt(s.nextLine());
 
