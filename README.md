@@ -74,3 +74,10 @@ Pick several of the Java format specifiers below and define variables of the cor
 * Push it to your Remote/origin branch (i.e. GitHub: Feature1 -> origin/Feature1)
 * Then issue a Pull request to my instructor branch
     * Make sure to **COPY** the Pull request URL and submit it for the lab/assignment.
+ 
+PART 2
+1.	Good and bad are variables and int is their data type. You can assign a number? In this code its 0, 1 or 2?
+2.	emotionalDamage is the variable and float is it’s data type and you can assign values like positive floating-point numbers, negative floating point numbers, zero and large and small values.
+
+
+3. Intellij is showing me that format() is redundant? other than that I am not sure what variable assignments are wrong?
