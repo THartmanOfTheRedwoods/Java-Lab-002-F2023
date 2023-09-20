@@ -55,15 +55,18 @@ Did you answer like a nice person? FALSE
 
 ### Part 2 - Interpretation
 Take note of the various variables and their data types. Write a brief summary in this section of the README.md file listing the:
-* Variable name
-* Its data type
-* and example values you can assign them.
+## -----------------------homework section-----------------------------
+* Variable name ---->integer variable  int  example int x
+* Its data type----> a data type than can store WHOLE numbers       
+* and example values you can assign them.--->  integers between -2147483648 to 2147483648
 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
+char a  doesnt work  because it needs to be in quotes char "a"  or char "a" = 9
+boolian yes or no is incorrect because in computer language its  true or false  
 * Hint: your IDE can help you discover wrong assignments or variable names!
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
-
+I didnt understand how to do this i tried, but need to move on. 
 Pick several of the Java format specifiers below and define variables of the correct type utilize **sout** and **String.format** to view the resulting formats.
 
 ![Format Specifiers](JavaStringFormatSpecifiers.png)
