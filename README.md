@@ -12,7 +12,7 @@ The lab template contains a program that prints the following if you choose "0":
 What does it mean to do something, "Like a Girl"?
 Show me what it looks like to run, "Like a Girl."
 Show me what it looks like to fight, "Like a Girl."
-How do you think it affects them when somebody uses "Like a Girl" as an insult? Choice (good: 0, bad: 1) 0
+How do you think it affects them when somebody uses "Like a Girl" as an insult? Choice (good: 0, bad: 1) 0 
 You answered 0
 Always wants to change that.
 Emotional Damage 100.000000.
