@@ -15,16 +15,16 @@ public class LikeAGirl {
         String scriptTemplateLine5 = "You answered %d%n%s.";
         String ansGood = "Always wants to change that.%nEmotional Damage %f";
         String ansBad = "Good for you.%nEmotional Damage %f";
-        String likeAGirl = "Like a Girl";
+        String likeAGirl = "Like a Boy";
 
         // integer variable
-        int good = 0;
-        int bad = 1;
+        int good = 1;
+        int bad = 2;
         // 32 bit floating point variable
-        float emotionalDamage = 0.0f;  // 32 Bit, but it does exist!
-        // double precision floating point variable
-        double dEmotionalDamage = 100.0; // Double precision
+        double dEmotionalDamage = 50.0; // Double precision
         // boolean variable
+        float emotionalDamage = 100.0f;  // 32 Bit, but it does exist!
+        // double precision floating point variable
         boolean trueOrFalse;
         // Scanner variable for reading input.
         Scanner s = new Scanner(System.in);
@@ -44,12 +44,15 @@ public class LikeAGirl {
 
         System.out.println(
                 String.format(scriptTemplateLine5, answer,
-                        (answer == good) ?
-                                String.format(ansGood, dEmotionalDamage) : String.format(ansBad, emotionalDamage)
+                        (answer != good) ?
+                                String.format(ansGood, emotionalDamage) : String.format(ansBad, dEmotionalDamage)
                 )
         );
 
-        trueOrFalse = (answer != good);  // if answer == 1 (i.e. good), then trueOrFalse should be False
+        trueOrFalse = (answer == good);  // if answer == 1 (i.e. good), then trueOrFalse should be True
         System.out.printf("Did you answer like a nice person? %B%n", trueOrFalse);
+        //LikeAGirl text was altered to LikeABoy text. Answer option 0 became answer option 1, and answer option 1
+        //became answer option 2. emotionalDamage became 100.0 from 0 and dEmotionalDamage became 50.0 from 100.0.
+        // != and == were swapped to create answer option 1 to produce a True response, and answer option 2 creates a False response.
     }
 }
