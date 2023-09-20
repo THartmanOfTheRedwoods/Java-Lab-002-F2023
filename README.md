@@ -55,12 +55,14 @@ Did you answer like a nice person? FALSE
 
 ### Part 2 - Interpretation
 Take note of the various variables and their data types. Write a brief summary in this section of the README.md file listing the:
-* Variable name
-* Its data type
-* and example values you can assign them.
+* Variable name: ***String***
+* Its data type: ***Non-Primitive***
+* and example values you can assign them.: ***stores strings of characters such as this text here surrounded by quotations like "Hello World"***
 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
+1. int ***good = 1.789*** is wrong because this is a double floating point due to the decimal int uses whole numbers
+2. boolean ***oneOrTwoOrThree*** is wrong because boolean is either on or off using two states only such as trueOrFalse or onOrOff
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
