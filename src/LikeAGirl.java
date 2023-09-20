@@ -17,6 +17,7 @@ public class LikeAGirl {
         String ansBad = "Good for you.%nEmotional Damage %f";
         String likeAGirl = "Like a Boy";
 
+
         // integer variable
         int good = 1;
         int bad = 2;
