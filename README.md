@@ -62,11 +62,15 @@ Take note of the various variables and their data types. Write a brief summary i
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
 
+* There are many variable types, including String, int, float, double, boolean, and Scanner. The String variables are often called stringTemplateLine1-5, and because they are strings, they are assigned a string of characters whereas the integers are assigned integers and the floats and doubles are assigned numbers with decimal points.
+* Wrong variable names:   Wrong variable assignments:   
+
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
 Pick several of the Java format specifiers below and define variables of the correct type utilize **sout** and **String.format** to view the resulting formats.
 
-![Format Specifiers](JavaStringFormatSpecifiers.png)
+![Format Specifiers](JavaStringFormatSpecifiers.png) 
+
 
 ### Part 4 - Submission
 * Just as you did last week (Reference the Lab video in your Week 1 module), create a Feature1 branch of your code
