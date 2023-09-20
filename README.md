@@ -12,7 +12,7 @@ The lab template contains a program that prints the following if you choose "0":
 What does it mean to do something, "Like a Girl"?
 Show me what it looks like to run, "Like a Girl."
 Show me what it looks like to fight, "Like a Girl."
-How do you think it affects them when somebody uses "Like a Girl" as an insult? Choice (good: 0, bad: 1) 0
+How do you think it affects them when somebody uses "Like a Girl" as an insult? Choice (good: 0, bad: 1) 0 
 You answered 0
 Always wants to change that.
 Emotional Damage 100.000000.
@@ -58,10 +58,15 @@ Take note of the various variables and their data types. Write a brief summary i
 * Variable name
 * Its data type
 * and example values you can assign them.
+ 
+* A variable is a named location that stores
+  a value. Values may be numbers, text, images, sounds, and other types of
+  data. Some variable examples are like int and char. These are called primitive data. Int could be int x;
+char can be different characters.
 
-Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
+* Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
-
+Two variable names could be public or class. a type of variabe assignment that wouldnt work would be 123 instead of "123";
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
 Pick several of the Java format specifiers below and define variables of the correct type utilize **sout** and **String.format** to view the resulting formats.
