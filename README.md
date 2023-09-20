@@ -58,6 +58,8 @@ Take note of the various variables and their data types. Write a brief summary i
 * Variable name
 * Its data type
 * and example values you can assign them.
+* Varible names types i played with are Primitive types,specifiers and their outputs. A messed up specifier i had to change was != to ==. %B%N was precent boolean and new line and its how i changed true or false in the code
+* 
 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
