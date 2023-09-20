@@ -55,13 +55,13 @@ Did you answer like a nice person? FALSE
 
 ### Part 2 - Interpretation
 Take note of the various variables and their data types. Write a brief summary in this section of the README.md file listing the:
-* Variable name
-* Its data type
-* and example values you can assign them.
+* Variable name - different variable names include good/bad for integer values. s for a scanner. the answer whether its good or bad.
+* Its data type - good/bad boolean values either yes 1 or no 2. floating poing
+* and example values you can assign them. you can assign 1 to the answer variable to get a response.
 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
-
+wrong: Bob = dylan,  2Bob = dylan right: bob = dylan bob2 = dylan
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
 Pick several of the Java format specifiers below and define variables of the correct type utilize **sout** and **String.format** to view the resulting formats.
