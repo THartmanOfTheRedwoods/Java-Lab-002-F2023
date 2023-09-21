@@ -59,7 +59,19 @@ Take note of the various variables and their data types. Write a brief summary i
 * Its data type
 * and example values you can assign them.
 
-Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
+**A few variable types found in LikeAGirl.java**
+* scriptTemplateLine1 is a String (non-primitive), the types of values you can assign to a string are a string of characters
+* good is an int or integer (primitive) and can be assigned a value of single digit integer such as 1
+* emotionalDamage is a float (primitive) and can be assigned a value of a digit with a decimal point but must include a "f" after the number
+* dEmotionalDamage is a double (primitive) and can be assigned a value of digit with a decimal point
+* trueOrFalse is a boolean (primitive) and can have a value of true or false
+
+
+* Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
+
+1. **int 1dayOfYear = 365.0; is wrong because you can not start a name with a number and the value has a decimal and is either a float or a double**
+2. **boolean isItTrue! = yes; is wrong because you can not use an explanation mark in a name and a boolean data type can only produce a value of true or false**
+
 * Hint: your IDE can help you discover wrong assignments or variable names!
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
