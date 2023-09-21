@@ -59,14 +59,44 @@ Take note of the various variables and their data types. Write a brief summary i
 * Its data type
 * and example values you can assign them.
 
+- String scriptTemplateLine1-5 // Strings of characters which provides templates where strings, digits, newlines, and floats are inserted
+- int good/bad // Integers which are expected inputs for user response like 1 and 2
+- float emotionalDamage / double dEmotionalDamage // Used to display floating point numbers like 50.0
+- boolean trueOrFalse // Boolean assigns a true or false statement depending on input
+
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
+
+- int number = "5"; // expected integer returned String
+- String = 5; // expected string returned integer
 
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
 Pick several of the Java format specifiers below and define variables of the correct type utilize **sout** and **String.format** to view the resulting formats.
 
 ![Format Specifiers](JavaStringFormatSpecifiers.png)
+
+**Some format specifiers described**
+
+- %b // *Boolean format specifier*
+- %s // *String format specifier*
+- %f // *Float format specifier*
+- %d // *Digit or int format specifier*
+
+**Listed below is an example snippet of code showcasing these format specifiers**
+
+```java
+  class FormatSpecifiers {
+  public static void main(String[] args) {
+  boolean x = true;
+  boolean x1 = false;
+  double y = 5.0;
+  int y1 = 5;
+  String z = "Lorem ipsum dolor sit amet";
+  System.out.printf("Booleans can be \"%b\" or \"%b\"\nDoubles have a decimal, like %.1f, while Integers such as %d do not.\nStrings, on the other hand, can be just about any assortment of characters you want, shown here: %s.", x, x1, y, y1, z);
+  }
+  }
+```
 
 ### Part 4 - Submission
 * Just as you did last week (Reference the Lab video in your Week 1 module), create a Feature1 branch of your code
