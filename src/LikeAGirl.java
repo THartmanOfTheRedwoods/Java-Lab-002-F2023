@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+ * @author Trevor Hartman
+ * @author MJ Fracess
+ *
+ * @since Version 1.0
+ */
 public class LikeAGirl {
     /**
      * "Like a Girl," Super Bowl XLIX (2015) - <a href="https://www.youtube.com/watch?v=5yLXrWLvwAo">Like a Girl</a>
@@ -15,17 +21,23 @@ public class LikeAGirl {
         String scriptTemplateLine5 = "You answered %d%n%s.";
         String ansGood = "Always wants to change that.%nEmotional Damage %f";
         String ansBad = "Good for you.%nEmotional Damage %f";
-        String likeAGirl = "Like a Girl";
+        String likeAGirl = "Like a Boy"; //changed from "Like a Girl"
+      String bonusAttempt = "Do you like bonus points? \"%s\"!";
+      String bonusSecondAttempt = "Do you like good grades, \"%s\"!";
+      String whatDoYouLike = "You know it";
+      String Question = "Are you sure?";
+
 
         // integer variable
-        int good = 0;
-        int bad = 1;
+        int good = 1;
+        int bad = 2;
         // 32 bit floating point variable
-        float emotionalDamage = 0.0f;  // 32 Bit, but it does exist!
+        float emotionalDamage = 50.0f;  // 32 Bit, but it does exist! Changed from original value of 0.0f
         // double precision floating point variable
         double dEmotionalDamage = 100.0; // Double precision
         // boolean variable
         boolean trueOrFalse;
+
         // Scanner variable for reading input.
         Scanner s = new Scanner(System.in);
 
@@ -44,12 +56,22 @@ public class LikeAGirl {
 
         System.out.println(
                 String.format(scriptTemplateLine5, answer,
-                        (answer == good) ?
+                        (answer == bad) ?
                                 String.format(ansGood, dEmotionalDamage) : String.format(ansBad, emotionalDamage)
                 )
         );
 
-        trueOrFalse = (answer != good);  // if answer == 1 (i.e. good), then trueOrFalse should be False
+        trueOrFalse = (answer != bad);  // if answer == 2 (i.e. bad), then trueOrFalse should be False
         System.out.printf("Did you answer like a nice person? %B%n", trueOrFalse);
+        System.out.println(
+                String.format(bonusAttempt, whatDoYouLike));
+        System.out.println(
+                String.format(bonusSecondAttempt, whatDoYouLike));
+        System.out.println(Question);
+        System.out.print(dEmotionalDamage);
+
+
+
+
     }
 }
