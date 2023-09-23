@@ -57,4 +57,4 @@ public class LikeAGirl {
 // float, double, and boolean. For int the data type is good,bad. For float its emotional damage. For double its also
 // emotional damage. For boolean its true or false. For int any integer can be assigned. For float and double its 0-100.
 // For boolean its only true or false that can be assigned. Before I changed the code I had to change the word Girl to Boy
-// within all the variables that's the only example I can think of.
+// within all the variables that's the only example I can think of .
