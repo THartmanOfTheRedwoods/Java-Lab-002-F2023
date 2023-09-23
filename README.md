@@ -58,10 +58,17 @@ Take note of the various variables and their data types. Write a brief summary i
 * Variable name
 * Its data type
 * and example values you can assign them.
+### Part 2 - Answers
+1) String variables that have characters as data type.
+2) Integer variables with numeric data type
+3) Boolean variable with integer and characters
+4) Scanner variable with characters
 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
-
+### Two examples
+* Integer varaiable assigned the words hello because integer variable must have an integer not a character
+* double precision floating point variable assigned characters because dEmotionalDamage = must have a integer value
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
 Pick several of the Java format specifiers below and define variables of the correct type utilize **sout** and **String.format** to view the resulting formats.
