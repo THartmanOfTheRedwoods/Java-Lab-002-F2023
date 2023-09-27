@@ -74,3 +74,25 @@ Pick several of the Java format specifiers below and define variables of the cor
 * Push it to your Remote/origin branch (i.e. GitHub: Feature1 -> origin/Feature1)
 * Then issue a Pull request to my instructor branch
     * Make sure to **COPY** the Pull request URL and submit it for the lab/assignment.
+
+Part 2 
+
+The data and the variable name:
+ 
+Data Type: Boolean
+Example values: True, False 
+
+
+Data Type Float 
+Example values: 50.00000, 100,00000
+
+
+Incorrect variables names and assignments
+
+234Hamza
+Data type is incorrect variable name 
+Assignment: 234Hamza = “invalid” is wrong because variable names cannot start with a digit 
+
+Class
+Data type: this is an incorrect variable name.
+Assignment: ‘class = “Math” is wrong because “class” is reserved keyword in many programming languages.
