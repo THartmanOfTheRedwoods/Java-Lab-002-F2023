@@ -58,10 +58,14 @@ Take note of the various variables and their data types. Write a brief summary i
 * Variable name
 * Its data type
 * and example values you can assign them.
+* int, the data type is an iteger, 1, 2, 3, 4, ...
+* String, the data type is a message or just basic english, "Hello World!"
+* double, the data type is a decimal number, 1.0, 1.1, 1.2, ...
+* boolean, the data type is a true or false, True or False
 
 Next give TWO example variable names and TWO example variable assignments that are **WRONG** and explain why.
 * Hint: your IDE can help you discover wrong assignments or variable names!
-
+int Main = 1 is wrong, String int = hello is wrong, int x = hello is wrong and int x = 1.5 is wrong
 ### Part 3 - Bonus: Play around with Java String Format Specifiers.
 
 Pick several of the Java format specifiers below and define variables of the correct type utilize **sout** and **String.format** to view the resulting formats.
